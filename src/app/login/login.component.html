@@ -1,33 +1,74 @@
-<div class="container">
-  <div class="columns is-centered is-mobile">
-    <h1 class="title column is-half is-one-fifth-desktop">Welcome to my Auth Example</h1>
-  </div>
-  <div class="columns is-centered is-mobile">
-      <div class="column notification column is-three-quarters-mobile is-half-tablet is-one-quarter-desktop">
-          <p class="subtitle">LOGIN</p>
-          <div class="field">
-            <label class="label"
-              > Name:
-            </label>
-            <div class="control has-icons-right">
-              <input [(ngModel)]="user.name" placeholder="Type Name" class="input"/>
-              <span class="icon is-small is-right">
-                <i class="fa fa-user"></i>
-              </span>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label"
-              > Password:
-            </label>
-            <div class="control has-icons-right">
-              <input [(ngModel)]="user.password" placeholder="Type Password" class="input"/>
-              <span class="icon is-small is-right">
-                <i class="fa fa-key"></i>
-              </span>
-            </div>
-          </div>
-          <button class="button is-dark" (click)="submit()">login</button>
-      </div>
-  </div>
-</div>
+<section id="login-view">
+	<div class="container">
+		<div class="columns is-centered is-mobile">
+			<h1 class="title column is-half-mobile is-half-tablet is-half-desktop">Welcome to my Auth Example</h1>
+		</div>
+		<div class="columns is-centered is-mobile">
+			<div class="column notification column is-three-quarters-mobile is-half-tablet is-half-desktop">
+				<p class="subtitle">LOGIN</p>
+				<div class="field">
+					<label class="label"
+					> Name:
+					</label>
+					<div class="control has-icons-right">
+					<input [(ngModel)]="user.name" placeholder="Type Name" class="input"/>
+					<span class="icon is-small is-right">
+						<i class="fa fa-user"></i>
+					</span>
+					</div>
+				</div>
+				<div class="field">
+					<label class="label"
+					> Password:
+					</label>
+					<div class="control has-icons-right">
+					<input [(ngModel)]="user.password" placeholder="Type Password" class="input"/>
+					<span class="icon is-small is-right">
+						<i class="fa fa-key"></i>
+					</span>
+					</div>
+				</div>
+				<button class="button is-dark" (click)="submit()">login</button>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-center">
+			<div>
+				<p><span>Nombre de Dios</span> Durango, Mexico</p>
+			</div>
+			<div>
+				<p>+52 618 126 2923</p>
+			</div>
+			<div>
+				<p>
+					<a href="#">gazaelfernandez@gmail.com </a>
+					<a href="#"> galfan18kasec@gmail.com</a>
+				</p>
+			</div>
+		</div>
+	<div class="footer-left">
+		<h3>Gelacio<span> Azael </span><span class="text -marked">Web Dev</span></h3>
+
+		<div class="footer-icons">
+			<a href="https://twitter.com/azaelfernandez" target="_blank">
+				<img class="footer-icon" src="https://image.flaticon.com/icons/svg/1051/1051382.svg" alt="twitter icon"/>
+			</a>
+			<a href="www.linkedin.com/in/gelacio-azael-f-a3694681" target="_blank">
+				<img class="footer-icon" src="https://image.flaticon.com/icons/svg/1384/1384088.svg" alt="linkedin icon"/>
+			</a>
+			<a href="https://github.com/kasec" target="_blank">
+				<img class="footer-icon" src="https://image.flaticon.com/icons/svg/1051/1051377.svg" alt="github icon"/>
+			</a>
+		</div>
+	</div>
+
+	<div class="footer-right">
+		<p class="footer-company-about">
+			<span>About the company</span>
+			I can create some kinds of web projects and native mobile applications for you.
+			You can follow me and watch my activities.
+		</p>
+	</div>
+	</footer>
+</section>
