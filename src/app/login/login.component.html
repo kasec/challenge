@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="columns is-centered is-mobile">
+    <h1 class="title column is-half is-one-fifth-desktop">Welcome to my Auth Example</h1>
+  </div>
+  <div class="columns is-centered is-mobile">
+      <div class="column notification column is-three-quarters-mobile is-half-tablet is-one-quarter-desktop">
+          <p class="subtitle">LOGIN</p>
+          <div class="field">
+            <label class="label"
+              > Name:
+            </label>
+            <div class="control has-icons-right">
+              <input [(ngModel)]="user.name" placeholder="Type Name" class="input"/>
+              <span class="icon is-small is-right">
+                <i class="fa fa-user"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label"
+              > Password:
+            </label>
+            <div class="control has-icons-right">
+              <input [(ngModel)]="user.password" placeholder="Type Password" class="input"/>
+              <span class="icon is-small is-right">
+                <i class="fa fa-key"></i>
+              </span>
+            </div>
+          </div>
+          <button class="button is-dark" (click)="submit()">login</button>
+      </div>
+  </div>
+</div>
