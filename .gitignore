@@ -45,4 +45,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
-.env
+api/env
+api/app.yaml
+api/node_modules

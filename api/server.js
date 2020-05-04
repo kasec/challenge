@@ -10,6 +10,7 @@ var usersMock = require("./mocks/users");
 userSchema.find(usersMock.azael, function (err, users) {
   if (err) return console.error(err);
   if (users.length === 0) {
+	console.log('creating new user')
     var newUser = new userSchema(usersMock.azael);
 
     newUser.save(function (err, user) {
@@ -60,5 +61,5 @@ app.get(
 );
 
 app.listen(3000, function () {
-  console.log("server running at 3000");
+  console.log("API REST its running at 3000");
 });
