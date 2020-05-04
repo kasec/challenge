@@ -6,7 +6,7 @@
     "start:web": "ng serve",
     "run:web:prod": "npm run build && node server.js",
     "run:api:prod": "cd ./api && yarn && npm start",
-    "start": "npm i && npm run run:web:prod",
+    "start": "npm run run:web:prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
