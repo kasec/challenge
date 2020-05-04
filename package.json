@@ -4,9 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start:web": "ng serve",
-    "run:web:prod": "npm run build && node server.js",
-    "run:api:prod": "cd ./api && yarn && npm start",
-    "start": "npm run run:api:prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
