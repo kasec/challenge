@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start:web": "ng serve",
-    "run:web:prod": "npm i && npm run build && node server.js",
+    "run:web:prod": "npm run build && node server.js",
     "run:api:prod": "cd ./api && yarn && npm start",
-    "start": "concurrently --names \"HTTP-SERVER, API-REST\" \"npm run run:web:prod\"  \"npm run run:api:prod\" ",
+    "start": "npm i && concurrently --names \"HTTP-SERVER, API-REST\" \"npm run run:web:prod\"  \"npm run run:api:prod\" ",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
