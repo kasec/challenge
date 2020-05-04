@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
-app.use(express.static('dist/challengeApp'));
+const path = require('path');
+app.use(express.static(__dirname ,'/dist/challengeApp'));
 app.get('/', function (req, res,next) {
     res.redirect('/');
 });
