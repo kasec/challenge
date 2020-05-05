@@ -8,7 +8,6 @@ import { User } from "./login/user";
   providedIn: "root",
 })
 export class RestApiService {
-  apiURL = "http://localhost:3000/api";
 
   constructor(private http: HttpClient) {}
 
@@ -20,7 +19,7 @@ export class RestApiService {
 
   auth(user): Observable<User> {
     return this.http
-      .post<User>(this.apiURL + "/auth/login", user, this.httpOptions)
+      .post<User>("/api/auth/login", user, this.httpOptions)
       .pipe(retry(1), catchError(this.handleError));
   }
 
