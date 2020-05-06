@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+require('dotenv').config();
 var bodyParser = require("body-parser");
 
 var passport = require('./api/auth');
@@ -63,7 +63,7 @@ app.get(
     res.json("debugging");
   }
 );
-
-app.listen(8080, function () {
-	console.log("WEB its running at 8080");
+const port = process.event.PORT || 8081
+app.listen(port, function () {
+	console.log("WEB its running at -> ", port);
 });
