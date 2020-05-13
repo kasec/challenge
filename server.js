@@ -7,12 +7,14 @@ var passport = require('./api/auth');
 
 var userSchema = require('./api/schemas/users');
 var usersMock = require("./api/mocks/users");
+
 // below it is setup about angular views
 app.use(express.static(__dirname + '/dist'));
 app.get('/', function (req, res,next) {
     res.redirect('/');
 });
 
+// FUNCTION OF BELOW WILL CREATE A USER IF IT NOT EXIST
 userSchema.find(usersMock.azael, function (err, users) {
 	if (err) return console.error(err);
 	if (users.length === 0) {
@@ -65,5 +67,5 @@ app.get(
 );
 const port = process.env.PORT || 8081
 app.listen(port, function () {
-	console.log("WEB its running at -> ", port);
+	console.log("HTTP its running at -> ", port);
 });
